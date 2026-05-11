@@ -1,0 +1,35 @@
+{
+  "name": "snaptab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SnapTab - Capture, edit, frame, and share screenshots in Chrome.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "icons": "node scripts/generate-icons.mjs",
+    "store-assets": "node scripts/generate-store-assets.mjs",
+    "zip": "node scripts/zip-dist.mjs",
+    "publish:webstore": "node scripts/webstore-publish.mjs"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.1.0-beta.26",
+    "@types/chrome": "^0.0.289",
+    "@types/node": "^22.15.30",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "sharp": "^0.34.5",
+    "type-fest": "^4.41.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}
